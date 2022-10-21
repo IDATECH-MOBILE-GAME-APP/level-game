@@ -36,3 +36,102 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  background-image: url('./compenont/isset/game.webp');
+  background-size: cover;
+  background-clip: border-box;
+  height:41rem;
+  background-position: 100%;
+}
+.box{
+  padding: 6rem;
+}
+.block{
+  background-color: rgb(72, 50, 21);
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 40%;
+  height: 20rem;
+  border-radius: 1rem;
+  padding:2rem;
+  opacity:70%
+}
+.head{
+  font-family: system-ui, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.1em;
+  padding-bottom: 1rem;
+}
+.form-control{
+color: #fff;
+font-family: system-ui, sans-serif;
+font-size: 2rem;
+line-height: 1.1;
+display: grid;
+margin-top: 1em;
+margin:1em;
+margin-right: auto;
+align-items: center;
+grid-template-columns: 1em auto;
+gap: 1em;
+}
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color:none;
+  /* Not removed via appearance */
+  margin: 0;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color:none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.10em;
+  height: 1.10em;
+  border: 0.15em solid rgb(169, 99, 1);
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="checkbox"]::before {
+  /* ...existing styles */
+
+  /* Windows High Contrast Mode */
+  background-color: solid rgb(169, 99, 1);
+}
+input[type="checkbox"]::before {
+  /* ...existing styles */
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
