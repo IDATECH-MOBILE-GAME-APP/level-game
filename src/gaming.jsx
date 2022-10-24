@@ -7,11 +7,11 @@ function gamewallpaper(){
                 <div className="block">
                     <div className='head'>LEVEL</div>
                     <div className='form-control'>
-                        <input type="checKbox" name="level" value="Easy level"></input>
+                        <input type="checKbox" name="easylevel" value="Easy level"></input>
                         <span>Easy level</span>
-                        <input type="checKbox" name="level" value="Medium level"></input>
+                        <input type="checKbox" name="mediumlevel" value="Medium level"></input>
                         <span>Medium level</span>
-                        <input type="checKbox" name="level" value="Hard level"></input>
+                        <input type="checKbox" name="hardlevel" value="Hard level"></input>
                         <span>Hard level</span>
                         </div>
                 </div>
